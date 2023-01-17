@@ -6,10 +6,11 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 54%, 65%);
 }
 
 * {
@@ -23,16 +24,18 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 50rem;
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   background-color: hsl(216, 12%, 8%);
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 .home, .thanks {
   background-color:hsl(213, 19%, 18%);
   padding: 1.5rem;
   border-radius: 0.825rem;
+  max-width: 375px;
 }
 
 .home img {
@@ -89,6 +92,53 @@ body {
 .btn-submit:hover {
   background-color: white;
   color: hsl(25, 97%, 53%);
+}
+
+.thanks {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.thanks img {
+  display: block;
+  margin: 0 auto 1.5rem; 
+}
+
+.selected {
+  background-color: hsl(214, 11%, 29%);
+  border-radius: 3rem;
+  padding: 0.25rem 1rem;
+  color: hsl(25, 97%, 53%);
+}
+
+.thanks h1 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.thanks button {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 3rem;
+  width: 30%;
+  padding: 0.55rem;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+.thanks button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.page2 {
+  display: none;
 }
 
 p {
